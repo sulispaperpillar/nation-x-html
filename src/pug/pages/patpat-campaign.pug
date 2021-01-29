@@ -1,0 +1,39 @@
+extends ../layouts/default-layout.pug
+block navbar
+  - var navType = "default"
+block content
+  .main-content
+    section.section-case-study
+      .main-container
+        .case-study-container
+          h1 PatPat PR Campaign
+          .case-study-triple
+            .triple-iphone-wrapper
+              .triple-iphone-mask
+                img(src="./assets/images/iphone.png", alt="Nation X")
+              img(src="./assets/images/iphone-patpat-1.jpg", alt="Nation X")
+            .triple-iphone-wrapper
+              .triple-iphone-mask
+                img(src="./assets/images/iphone.png", alt="Nation X")
+              img(src="./assets/images/iphone-patpat-2.jpg", alt="Nation X")
+            .triple-iphone-wrapper
+              .triple-iphone-mask
+                img(src="./assets/images/iphone.png", alt="Nation X")
+              img(src="./assets/images/iphone-patpat-3.jpg", alt="Nation X")
+          .case-study-detail
+            .case-study-points
+              ul.list-check.list-check-big.grid-2
+                li Article Publications: 55+
+                li Media Sample Request: 200+
+                li Total Viewership Reach: 110 Million
+            .case-study-text
+              .grid-2
+                .col
+                  p Throughout the four months of Nation X's PR campaign, everyone's favorite children's clothing company PatPat received over 150 sample requests from media around the country. PatPat was then featured in 30+ unique publications. From the likes of some of the biggest publications on the West Coast such as KTLA to some of New York's finest like Pixel 11, Not to mention PatPat is slowly breaking its way to more and more major publications each week, such as USA TODAY!
+                .col
+                  p Most recently PatPat wanted to increase their exposure in the Latin America thus Nation X connected them with Telemundo. These publications had between 500,000-69,500,000 unique monthly viewers helping PatPat get in front of more and more targeted buyers (parents) across the states.
+            .case-study-publication
+              img.pix11(src="./assets/images/pix11.png", alt="Nation X")
+              img.ktla(src="./assets/images/ktla.png", alt="Nation X")
+              img.telemundo(src="./assets/images/telemundo.png", alt="Nation X")
+              img.usa-today(src="./assets/images/usa-today.png", alt="Nation X")

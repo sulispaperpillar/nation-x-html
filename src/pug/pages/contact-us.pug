@@ -1,0 +1,59 @@
+extends ../layouts/default-layout.pug
+block navbar
+  - var navType = "default"
+block content
+  .main-content
+    section.section-contact
+      .main-container
+        .contact-wrapper
+          h1 Ready to Partner With Us? We’re here and ready to help.
+          .contact-tab
+            .tab-nav
+              button.btn.btn-tab.active(data-tab="brands") Brands
+              button.btn.btn-tab(data-tab="influencers") Influencers
+          .tab-panel.active(data-target="brands")
+            .contact-form
+              form
+                .form-wrapper
+                  .form-group
+                    .grid-2
+                      .col
+                        input.form-input(type="text", placeholder="Name")
+                      .col
+                        input.form-input(type="text", placeholder="Brand")
+                  .form-group
+                    .grid-2
+                      .col
+                        input.form-input(type="text", placeholder="Company")
+                      .col
+                        input.form-input(type="email", placeholder="Email")
+                  .form-group
+                    .grid-2
+                      .col
+                        input.form-input(type="text", placeholder="Project Budget")
+                      .col
+                        input.form-input(type="text", placeholder="Timing")
+                  .form-group
+                    textarea.form-input(placeholder="Tell Us More")
+                  .form-group.text-right
+                    button.btn.btn-primary(type="submit") Send Message
+          .tab-panel(data-target="influencers")
+            .contact-form
+              form
+                .form-wrapper
+                  .form-group
+                    .grid-2
+                      .col
+                        input.form-input(type="text", placeholder="Name")
+                      .col
+                        input.form-input(type="text", placeholder="Phone Number")
+                  .form-group
+                    .grid-2
+                      .col
+                        input.form-input(type="email", placeholder="Email")
+                      .col
+                        input.form-input(type="text", placeholder="Link")
+                  .form-group
+                    textarea.form-input(placeholder="What Value Do You Bring")
+                  .form-group.text-right
+                    button.btn.btn-primary(type="submit") Send Message

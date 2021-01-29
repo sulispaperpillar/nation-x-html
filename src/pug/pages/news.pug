@@ -1,0 +1,153 @@
+extends ../layouts/default-layout.pug
+block navbar
+  - var navType = "default"
+block content
+  .main-content
+    section.section-news
+      .main-container
+        .news-wrapper
+          h1 Ready to Partner With Us? We’re here and ready to help.
+          .news-tab
+            .tab-nav
+              button.btn.btn-tab(data-tab="article") Article
+              button.btn.btn-tab.active(data-tab="press") Press
+          .tab-panel(data-target="article")
+            .news-featured
+              .news-featured-image
+                a(href="news-detail.html")
+                  img(src="./assets/images/news-1.jpg", alt="Nation X")
+              .news-featured-text
+                ul
+                  li
+                    a(href="#") Influencer Marketing
+                a(href="news-detail.html")
+                  h3 Article 1
+                p Duis ac ante viverra, imperdiet odio quis, imperdiet velit. Integer at purus et nisi lobortis placerat. Nulla ultrices pulvinar sem, nec semper lectus fermentum ut. Vestibulum eu arcu feugiat, feugiat lectus eu, consequat ipsum.
+                span Jun 22, 2020
+            .news-grid.grid-3
+              .col
+                .news-card
+                  a(href="news-detail.html")
+                    img(src="./assets/images/news-2.jpg", alt="Nation X")
+                  ul
+                    li
+                      a(href="#") Influencer Marketing
+                  a(href="news-detail.html")
+                    h3 Article Title
+                  span Jun 22, 2020
+              .col
+                .news-card
+                  a(href="news-detail.html")
+                    img(src="./assets/images/news-3.jpg", alt="Nation X")
+                  ul
+                    li
+                      a(href="#") Influencer Marketing
+                  a(href="news-detail.html")
+                    h3 Article Title
+                  span Jun 22, 2020
+              .col
+                .news-card
+                  a(href="news-detail.html")
+                    img(src="./assets/images/news-4.jpg", alt="Nation X")
+                  ul
+                    li
+                      a(href="#") Influencer Marketing
+                  a(href="news-detail.html")
+                    h3 Article Title
+                  span Jun 22, 2020
+              .col
+                .news-card
+                  a(href="news-detail.html")
+                    img(src="./assets/images/news-2.jpg", alt="Nation X")
+                  ul
+                    li
+                      a(href="#") Influencer Marketing
+                  a(href="news-detail.html")
+                    h3 Article Title
+                  span Jun 22, 2020
+              .col
+                .news-card
+                  a(href="news-detail.html")
+                    img(src="./assets/images/news-3.jpg", alt="Nation X")
+                  ul
+                    li
+                      a(href="#") Influencer Marketing
+                  a(href="news-detail.html")
+                    h3 Article Title
+                  span Jun 22, 2020
+              .col
+                .news-card
+                  a(href="news-detail.html")
+                    img(src="./assets/images/news-4.jpg", alt="Nation X")
+                  ul
+                    li
+                      a(href="#") Influencer Marketing
+                  a(href="news-detail.html")
+                    h3 Article Title
+                  span Jun 22, 2020
+            .pagination.text-center
+              a.btn.btn-primary(href="#") view More
+          .tab-panel.active(data-target="press")
+            .news-featured
+              .news-featured-image
+                a(href="https://www.usatoday.com/story/tech/reviewedcom/2020/10/20/20-most-adorable-holiday-outfits-kids/5996472002/", target="_blank")
+                  img(src="./assets/images/usa-today.jpg", alt="Nation X")
+              .news-featured-text
+                ul
+                  li
+                    a(href="https://www.usatoday.com/story/tech/reviewedcom/2020/10/20/20-most-adorable-holiday-outfits-kids/5996472002/", target="_blank") USA Today
+                a(href="https://www.usatoday.com/story/tech/reviewedcom/2020/10/20/20-most-adorable-holiday-outfits-kids/5996472002/", target="_blank")
+                  h3 20 of The Most Adorable Holiday Outfits For Kids
+                p It’s beginning to look a lot like fall, and with the season changing, that means that the holidays are right around the corner. While there are a lot of us who are looking forward to those special dinners, some of us are waiting to see what outfits to buy for our little ones.
+                span Oct 20, 2020
+            .news-grid.grid-3
+              .col
+                .news-card
+                  a(href="https://www.romper.com/p/this-care-bears-childrens-clothing-is-the-perfect-blend-of-nostalgia-comfort-33884185", target="_blank")
+                    img(src="./assets/images/romper.jpg", alt="Nation X")
+                  ul
+                    li
+                      a(href="https://www.romper.com/p/this-care-bears-childrens-clothing-is-the-perfect-blend-of-nostalgia-comfort-33884185", target="_blank") Romper
+                  a(href="https://www.romper.com/p/this-care-bears-childrens-clothing-is-the-perfect-blend-of-nostalgia-comfort-33884185", target="_blank")
+                    h3 This Care Bears Children's Clothing Is The Perfect Blend Of Nostalgia &amp; Comfort
+                  span Sep 17, 2020
+              .col
+                .news-card
+                  a(href="https://winit.womansworld.com/sweepstakes/win-a-valentines-day-bundle-from-patpat-29853", target="_blank")
+                    img(src="./assets/images/womans-world.jpg", alt="Nation X")
+                  ul
+                    li
+                      a(href="https://winit.womansworld.com/sweepstakes/win-a-valentines-day-bundle-from-patpat-29853", target="_blank") Woman's World
+                  a(href="https://winit.womansworld.com/sweepstakes/win-a-valentines-day-bundle-from-patpat-29853", target="_blank")
+                    h3 Win a Valentines Day Bundle from PatPat! 
+                  span End Feb 21, 2021
+              .col
+                .news-card
+                  a(href="https://www.yourtango.com/2020339180/best-virtual-baby-shower-gift-ideas", target="_blank")
+                    img(src="./assets/images/yourtango.jpg", alt="Nation X")
+                  ul
+                    li
+                      a(href="https://www.yourtango.com/2020339180/best-virtual-baby-shower-gift-ideas", target="_blank") YourTango
+                  a(href="https://www.yourtango.com/2020339180/best-virtual-baby-shower-gift-ideas", target="_blank")
+                    h3 42 Best Virtual Baby Shower Gift Ideas
+                  span Jan 16, 2021
+              .col
+                .news-card
+                  a(href="https://www.eonline.com/news/1219666/kylie-jenner-jessica-alba-and-more-stars-show-off-their-familys-matching-holiday-pajamas", target="_blank")
+                    img(src="./assets/images/eonline.png", alt="Nation X")
+                  ul
+                    li
+                      a(href="https://www.eonline.com/news/1219666/kylie-jenner-jessica-alba-and-more-stars-show-off-their-familys-matching-holiday-pajamas", target="_blank") E! Online
+                  a(href="https://www.eonline.com/news/1219666/kylie-jenner-jessica-alba-and-more-stars-show-off-their-familys-matching-holiday-pajamas", target="_blank")
+                    h3 Kylie Jenner, Jessica Alba and More Stars Show Off Their Family's Matching Holiday Pajamas
+                  span Dec 21, 2020
+              .col
+                .news-card
+                  a(href="https://www.babygaga.com/christmas-looks-mom-2020/", target="_blank")
+                    img(src="./assets/images/babygaga.jpg", alt="Nation X")
+                  ul
+                    li
+                      a(href="https://www.babygaga.com/christmas-looks-mom-2020/", target="_blank") Babygaga
+                  a(href="https://www.babygaga.com/christmas-looks-mom-2020/", target="_blank")
+                    h3 5 Holiday Looks Moms Can't Get Enough Of This Year
+                  span Dec 25, 2020

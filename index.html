@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <title>Nation X</title>
+    <!-- Styles-->
+    <link href="./assets/vendors/slick/slick.css" rel="stylesheet">
+    <link href="./assets/css/styles.min.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="app">
+      <header class="nav-white">
+        <div class="main-container">
+          <div class="header-container">
+            <div class="header-menu">
+              <div class="header-menu-mobile js-mobile-menu"><span></span><span></span></div>
+              <div class="header-menu-wrapper">
+                <ul>
+                  <li><a href="service.html">Services</a></li>
+                  <li><a href="about-us.html">About Us</a></li>
+                  <li><a href="case-studies.html">Case Studies</a></li>
+                  <li><a href="news.html">News</a></li>
+                  <li><a href="contact-us.html">Contact Us</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <div class="main-content">
+        <section class="section-home">
+          <div class="home-hero-bg">
+            <canvas id="waves-1"></canvas>
+            <canvas id="waves-2"></canvas>
+            <canvas id="waves-3"></canvas>
+            <canvas id="waves-4"></canvas>
+            <canvas id="waves-5"></canvas>
+            <canvas id="waves-6"></canvas>
+            <canvas id="waves-7"></canvas>
+            <canvas id="waves-8"></canvas>
+            <canvas id="waves-9"></canvas>
+            <canvas id="waves-10"></canvas>
+            <canvas id="waves-11"></canvas>
+            <canvas id="waves-12"></canvas>
+            <canvas id="waves-13"></canvas>
+            <canvas id="waves-14"></canvas>
+            <canvas id="waves-15"></canvas>
+            <canvas id="waves-16"></canvas>
+            <canvas id="waves-17"></canvas>
+            <canvas id="waves-18"></canvas>
+            <canvas id="waves-19"></canvas>
+            <canvas id="waves-20"></canvas>
+          </div>
+          <div class="main-container">
+            <div class="home-text"><img src="./assets/images/logo-big.png" alt="Nation X">
+              <h2 class="text-white">Influencer Marketing at The Global Level</h2>
+              <p class="text-white">Using our data driven approach,<br>Nation X develops symbiotic relationships<br>between brands &amp; top-tier influencers, worldwide.</p>
+              <div class="home-text-button"><a class="btn btn-primary" href="contact-us.html">Contact Us</a></div>
+            </div>
+          </div>
+        </section>
+      </div>
+      <footer>
+        <div class="main-container">
+          <div class="footer-cta">
+            <h3 class="text-white">Ready to Catalyze Your Partnerships?</h3><a class="btn btn-line-primary" href="contact-us.html">Get In Touch</a>
+          </div>
+          <div class="footer-info text-white">
+            <div class="footer-logo"><a href="index.html"><img src="./assets/images/logo-big.png" alt="Nation X"></a></div>
+            <div class="footer-office">
+              <div class="footer-address">
+                <h3>Los Angeles</h3>
+                <p>117 San Vicente Ave Beverly Hills, CA 90211</p>
+              </div>
+              <div class="footer-address">
+                <h3>Dubai</h3>
+                <p>9th Floor, The Offices 4, One Central Dubai World Trade Center, Dubai</p>
+              </div>
+              <div class="footer-address">
+                <h3>China</h3>
+                <p>715-17, Building 2, Haiyuan Business Logistics, No. 8 Fu'an Avenue, Hehua Community, Pinghu Street, Longgang District, Shenzhen</p>
+              </div>
+            </div>
+          </div>
+          <div class="footer-main">
+            <div class="footer-nav">
+              <ul>
+                <li><a href="#">Terms Of Service</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+              </ul>
+              <p class="text-white">&copy; 2021 Nation X INC,. Full Service Marketing.  All rights reserved. </p>
+            </div>
+            <div class="footer-social">
+              <ul>
+                <li><a href="https://www.instagram.com/nationx_usa/" target="_blank"><img src="./assets/icons/instagram.png" alt="Nation X"></a></li>
+                <li><a href="https://www.linkedin.com/company/nationx/?viewAsMember=true" target="_blank"><img src="./assets/icons/linkedin.png" alt="Nation X"></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <!-- Scripts-->
+    <script src="./assets/vendors/jquery/jquery.min.js"></script>
+    <script src="./assets/vendors/slick/slick.min.js"></script>
+    <script src="./assets/js/scripts.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/84/three.min.js"></script>
+    <script src="https://isuttell.github.io/sine-waves/javascripts/sine-waves.min.js"></script>
+    <script>
+      function wavesElement(waveElm, amp) {
+        var waves = new SineWaves({
+          el: document.getElementById(waveElm),
+          speed: 2,
+          ease: 'SineInOut',
+          wavesWidth: '100%',
+          waves: [
+            {
+              timeModifier: 1,
+              lineWidth: 1,
+              amplitude: amp,
+              wavelength: 150
+            }
+          ],
+          resizeEvent: function() {
+            var index = -1;
+            var length = this.waves.length;
+            while (++index < length) {
+              this.waves[index].strokeStyle = '#dce1ee';
+            }
+            index = void 0;
+            length = void 0;
+          }
+        });
+        return waves;
+      }
+      
+      wavesElement('waves-1', 200);
+      wavesElement('waves-2', 200);
+      wavesElement('waves-3', 200);
+      wavesElement('waves-4', 200);
+      wavesElement('waves-5', 200);
+      wavesElement('waves-6', 200);
+      wavesElement('waves-7', 200);
+      wavesElement('waves-8', 200);
+      wavesElement('waves-9', 200);
+      wavesElement('waves-10', 200);
+      wavesElement('waves-11', 200);
+      wavesElement('waves-12', 200);
+      wavesElement('waves-13', 200);
+      wavesElement('waves-14', 200);
+      wavesElement('waves-15', 200);
+      wavesElement('waves-16', 200);
+      wavesElement('waves-17', 200);
+      wavesElement('waves-18', 200);
+      wavesElement('waves-19', 200);
+      wavesElement('waves-20', 200);
+    </script>
+  </body>
+</html>

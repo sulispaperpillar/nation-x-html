@@ -1,0 +1,90 @@
+extends ../layouts/default-layout.pug
+block navbar
+  - var navType = "white"
+block content
+  .main-content
+    section.section-home
+      .home-hero-bg
+        canvas#waves-1
+        canvas#waves-2
+        canvas#waves-3
+        canvas#waves-4
+        canvas#waves-5
+        canvas#waves-6
+        canvas#waves-7
+        canvas#waves-8
+        canvas#waves-9
+        canvas#waves-10
+        canvas#waves-11
+        canvas#waves-12
+        canvas#waves-13
+        canvas#waves-14
+        canvas#waves-15
+        canvas#waves-16
+        canvas#waves-17
+        canvas#waves-18
+        canvas#waves-19
+        canvas#waves-20
+      .main-container
+        .home-text
+          img(src="./assets/images/logo-big.png", alt="Nation X")
+          h2.text-white Influencer Marketing at The Global Level
+          p.text-white
+            | Using our data driven approach,
+            br
+            | Nation X develops symbiotic relationships
+            br
+            | between brands &amp; top-tier influencers, worldwide.
+          .home-text-button
+            a.btn.btn-primary(href="contact-us.html") Contact Us
+block scripts
+  script(src='https://cdnjs.cloudflare.com/ajax/libs/three.js/84/three.min.js')
+  script(src='https://isuttell.github.io/sine-waves/javascripts/sine-waves.min.js')
+  script.
+    function wavesElement(waveElm, amp) {
+      var waves = new SineWaves({
+        el: document.getElementById(waveElm),
+        speed: 2,
+        ease: 'SineInOut',
+        wavesWidth: '100%',
+        waves: [
+          {
+            timeModifier: 1,
+            lineWidth: 1,
+            amplitude: amp,
+            wavelength: 150
+          }
+        ],
+        resizeEvent: function() {
+          var index = -1;
+          var length = this.waves.length;
+          while (++index < length) {
+            this.waves[index].strokeStyle = '#ffffff';
+          }
+          index = void 0;
+          length = void 0;
+        }
+      });
+      return waves;
+    }
+
+    wavesElement('waves-1', 200);
+    wavesElement('waves-2', 200);
+    wavesElement('waves-3', 200);
+    wavesElement('waves-4', 200);
+    wavesElement('waves-5', 200);
+    wavesElement('waves-6', 200);
+    wavesElement('waves-7', 200);
+    wavesElement('waves-8', 200);
+    wavesElement('waves-9', 200);
+    wavesElement('waves-10', 200);
+    wavesElement('waves-11', 200);
+    wavesElement('waves-12', 200);
+    wavesElement('waves-13', 200);
+    wavesElement('waves-14', 200);
+    wavesElement('waves-15', 200);
+    wavesElement('waves-16', 200);
+    wavesElement('waves-17', 200);
+    wavesElement('waves-18', 200);
+    wavesElement('waves-19', 200);
+    wavesElement('waves-20', 200);

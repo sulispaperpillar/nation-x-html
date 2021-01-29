@@ -1,0 +1,38 @@
+extends ../layouts/default-layout.pug
+block navbar
+  - var navType = "default"
+block content
+  .main-content
+    section.section-case-study
+      .main-container
+        .case-study-container
+          //- h1 Tiktok
+          img(src="./assets/images/tiktok-logo.png", alt="Nation X")
+          .case-study-slider
+            .case-study-arrows
+              button.btn.btn-arrow-prev
+                img(src="./assets/icons/chevron-prev.png", alt="Nation X")
+              button.btn.btn-arrow-next
+                img(src="./assets/icons/chevron-next.png", alt="Nation X")
+            .case-study-slider-wrapper
+              .case-study-carousel
+                .case-study-item
+                  img(src="./assets/images/tiktok-slider-1.jpg", alt="Nation X")
+                .case-study-item
+                  img(src="./assets/images/tiktok-slider-2.jpg", alt="Nation X")
+                .case-study-item
+                  img(src="./assets/images/tiktok-slider-3.jpg", alt="Nation X")
+                .case-study-item
+                  img(src="./assets/images/tiktok-slider-4.jpg", alt="Nation X")
+          .case-study-detail
+            .case-study-points
+              ul.list-check.list-check-big.flex
+                li Influencers - 70
+                li Total Reach - 87 Million
+                li Total Impression: 33 Million
+            .case-study-text
+              .grid-2
+                .col
+                  p Nation X executed a viral video campaign for Tik-Tok’s entrance in the United States market. During New York Fashion Week 2018, Nation X connected TikTok with 70 influencers ranging from micro-influencers like Gia Rose Di Tullio to Irianny Celeste.
+                .col
+                  p Influencers posted a video of them doing outfit changes in spirit of the internationally acclimated fashion event. Furthermore influencers also shared videos of them at the catwalk.

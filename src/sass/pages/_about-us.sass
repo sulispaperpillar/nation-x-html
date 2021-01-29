@@ -1,0 +1,283 @@
+.about
+  &-top
+    &-wrapper
+      display: flex
+      flex-direction: column
+      justify-content: flex-start
+      align-items: center
+      @media (min-width: $lg)
+        flex-direction: row
+    &-image
+      position: relative
+      flex: 0 0 100%
+      width: 100%
+      @media (min-width: $lg)
+        flex: 0 0 50%
+        width: 50%
+      img
+        display: block
+        position: relative
+        left: -30px
+        width: calc(100% + 60px)
+        object-fit: cover
+        @media (min-width: $lg)
+          width: 50vw
+          height: 540px
+        @media (min-width: $xl)
+          left: -120px
+          width: 720px
+          height: 670px
+    &-text
+      flex: 0 0 100%
+      width: 100%
+      padding: 50px 0 0
+      @media (min-width: $lg)
+        flex: 0 0 50%
+        width: 50%
+        padding: 0 0 0 50px
+      h2
+        margin: 0
+        font-weight: 500
+        font-size: 28px
+        line-height: 42px
+        @media (min-width: $md)
+          font-size: 44px
+          line-height: 64px
+      p
+        margin: 30px 0 0
+        font-family: $roboto
+        font-weight: 500
+        font-size: 20px
+        line-height: 30px
+  &-middle
+    &-wrapper
+      position: relative
+  &-partnership
+    display: flex
+    flex-direction: column-reverse
+    @media (min-width: $lg)
+      flex-direction: row
+    &-text
+      flex: 0 0 100%
+      width: 100%
+      padding: 50px 0 0
+      @media (min-width: $lg)
+        flex: 0 0 50%
+        width: 50%
+        padding: 90px 50px 90px 0
+      h3
+        max-width: 430px
+        margin: 0
+        font-weight: 500
+        font-size: 28px
+        line-height: 38px
+        @media (min-width: $md)
+          font-size: 36px
+          line-height: 46px
+      p
+        margin: 30px 0 0
+        font-weight: 400
+        font-size: 16px
+        line-height: 26px
+        @media (min-width: $lg)
+          max-width: 430px
+        + p
+          margin: 40px 0 0
+    &-image
+      position: relative
+      flex: 0 0 100%
+      width: 100%
+      @media (min-width: $lg)
+        flex: 0 0 50%
+        width: 50%
+      img
+        display: block
+        position: relative
+        width: 100%
+        object-fit: cover
+        @media (min-width: $lg)
+          width: 50vw
+          height: 100%
+        @media (min-width: $xl)
+          width: 720px
+  &-brand
+    margin: 150px 0 0
+    &-wrapper
+      + .section-title
+        margin: 100px 0 0
+    &-carousel
+      width: 160px
+      margin: 0 auto
+      @media (min-width: $sm)
+        width: 540px
+      @media (min-width: $lg)
+        width: 900px
+      .slick
+        &-list
+          overflow: initial
+        &-slide
+          outline: none
+    &-item
+      margin: 0 10px
+      @media (min-width: $sm)
+        margin: 0 20px
+      img
+        display: block
+        width: 140px
+        height: 140px
+        object-fit: cover
+  &-bottom
+    &-wrapper
+      position: relative
+  &-set
+    display: flex
+    flex-direction: column
+    justify-content: flex-start
+    align-items: center
+    margin: 100px 0 0
+    @media (min-width: $lg)
+      flex-direction: row
+    &-image
+      position: relative
+      flex: 0 0 100%
+      width: 100%
+      @media (min-width: $lg)
+        flex: 0 0 50%
+        width: 50%
+      img
+        display: block
+        width: 100%
+    &-text
+      flex: 0 0 100%
+      width: 100%
+      padding: 50px 0 0
+      @media (min-width: $lg)
+        flex: 0 0 50%
+        width: 50%
+        padding: 0 0 0 60px
+      p
+        margin: 0
+        font-weight: 400
+        font-size: 16px
+        line-height: 26px
+        + ul
+          margin: 30px 0 0
+  &-team
+    width: 100%
+    margin: 120px 0 0
+    padding: 120px 30px
+    background-color: #f8f6ec
+    @media (min-width: $xl)
+      width: calc(100% + 40px)
+      margin: 120px -20px 0
+      padding: 120px 40px
+    &-grid
+      margin: 64px 0 0
+    &-card
+      height: 100%
+      padding: 30px
+      background-color: $white
+      box-shadow: 0px 26px 32px rgba(25, 27, 48, .05)
+      border-radius: 30px
+      text-align: center
+      img
+        width: 120px
+        height: 120px
+        object-fit: cover
+        margin: 0 auto
+        border-radius: 60px
+      h3
+        margin: 30px 0 0
+        font-weight: 500
+        font-size: 22px
+        line-height: 32px
+      p
+        margin: 10px 0 0
+        font-family: $roboto
+        font-size: 18px
+        line-height: 28px
+        opacity: .8
+  &-testimonials
+    margin: 120px 0 0
+    &-wrapper
+      position: relative
+      padding: 96px 0 0
+    &-arrows
+      display: flex
+      justify-content: flex-start
+      align-items: center
+      position: absolute
+      top: 0
+      right: 0
+      .btn
+        + .btn
+          margin: 0 0 0 25px
+    &-carousel
+      margin: 0 -15px
+      .slick
+        &-track
+          display: flex
+        &-slide
+          outline: none
+          float: initial
+          height: inherit
+    &-item
+      margin: 0 15px 40px
+    &-card
+      display: flex
+      flex-direction: column
+      justify-content: flex-start
+      align-items: flex-start
+      height: 100%
+      padding: 40px 20px 40px 40px
+      background-color: $white
+      box-shadow: 0px 20px 20px rgba(25, 27, 48, .05)
+      border-radius: 30px
+      @media (min-width: $sm)
+        flex-direction: row
+    &-image
+      flex: 0 0 80px
+      width: 80px
+      img
+        display: block
+        width: 80px
+        height: 80px
+        object-fit: cover
+        margin: 0
+        border-radius: 40px
+    &-text
+      flex: 0 0 100%
+      width: 100%
+      padding: 30px 0 0
+      @media (min-width: $sm)
+        flex: 0 0 calc(100% - 80px)
+        width: calc(100% - 80px)
+        padding: 0 0 0 30px
+      h3
+        margin: 0
+        font-weight: 500
+        font-size: 20px
+        line-height: 30px
+      span
+        display: block
+        margin: 5px 0 0
+        font-size: 16px
+        line-height: 30px
+        opacity: .5
+      p
+        margin: 20px 0 0
+        font-size: 16px
+        line-height: 26px
+        opacity: .8
+  &-image
+    &-wrapper
+      max-width: 430px
+      margin: 0 0 0 auto
+      padding: 54px 40px
+      background-color: $white
+      h2
+        margin: 0
+        font-weight: 400
+        font-size: 22px
+        line-height: 33px
+        opacity: .8

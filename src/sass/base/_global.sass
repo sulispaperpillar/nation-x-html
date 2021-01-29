@@ -1,0 +1,201 @@
+html,
+body
+  margin: 0
+  padding: 0
+  font-family: $rubik
+  color: $primary
+  -moz-osx-font-smoothings: grayscale
+  -webkit-font-smoothing: antialiased
+
+body
+  &.fixed
+    position: relative
+    overflow: hidden
+  
+*
+  box-sizing: border-box
+
+a
+  color: $secondary
+  text-decoration: none
+
+ul
+  &.list
+    &-check
+      margin: 0
+      padding: 0
+      list-style: none
+      li
+        position: relative
+        padding: 0 0 0 30px
+        + li
+          margin: 25px 0 0
+        &:before
+          content: ''
+          position: absolute
+          top: 3px
+          left: 0
+          width: 16px
+          height: 16px
+          background-image: url("../icons/list-check.png")
+          background-repeat: no-repeat
+          background-size: 100%
+          background-position: center
+      &-white
+        li
+          &:before
+            background-image: url("../icons/list-check-white.png")
+      &-big
+        li
+          font-weight: bold
+          font-size: 26px
+          line-height: 28px
+          &:before
+            top: 6px
+
+section
+  position: relative
+  background-color: #fffef9
+  &.section
+    &-home
+      padding: 80px 0 100px
+      background-color: $primary
+      @media (min-width: $sm)
+        padding: 120px 0 160px
+    &-service
+      &-top
+        padding: 40px 0 0
+        &:before
+          content: ''
+          position: absolute
+          bottom: 0
+          left: 0
+          z-index: 0
+          width: 100%
+          height: 90px
+          background-color: $primary
+          @media (min-width: $sm)
+            height: 180px
+          @media (min-width: $lg)
+            height: 360px
+      &-middle
+        padding: 120px 0
+        background-color: $primary
+      &-bottom
+        padding: 0 0 120px
+        &:before
+          content: ''
+          position: absolute
+          top: 0
+          left: 0
+          z-index: 0
+          width: 100%
+          height: 116px
+          background-color: $primary
+    &-about
+      &-top
+        padding: 0 0 120px
+        @media (min-width: $lg)
+          padding: 40px 0 120px
+      &-middle
+        padding: 120px 0
+        background-color: $primary
+        @media (min-width: $lg)
+          padding: 0 0 120px
+      &-bottom
+        padding: 120px 0 80px
+      &-image
+        padding: 120px 0
+        background-repeat: no-repeat
+        background-size: cover
+        background-position: center
+    &-news
+      padding: 40px 0 120px
+      &-detail
+        padding: 40px 0 120px
+    &-contact
+      padding: 40px 0 120px
+    &-case
+      &-studies
+        padding: 40px 0 120px
+      &-study
+        padding: 40px 0 120px
+
+.app
+  position: relative
+  overflow: hidden
+
+.main
+  &-content
+    position: relative
+    z-index: 1
+  &-container
+    position: relative
+    z-index: 1
+    max-width: 1260px
+    margin: 0 auto
+    padding: 0 30px
+
+.section
+  &-title
+    h2
+      margin: 0
+      font-weight: 500
+      font-size: 28px
+      line-height: 38px
+      @media (min-width: $md)
+        font-size: 36px
+        line-height: 46px
+    h3
+      margin: 20px 0 0
+      font-weight: 500
+      font-size: 22px
+      line-height: 32px
+    p
+      margin: 30px 0 0
+      font-weight: 400
+      font-size: 16px
+      line-height: 26px
+      opacity: .8
+
+.text
+  &-center
+    text-align: center
+  &-right
+    text-align: right
+  &-white
+    color: $white
+
+.grid-2
+  display: grid
+  grid-template-columns: 1fr
+  grid-gap: 30px 20px
+  @media (min-width: $sm)
+    grid-template-columns: repeat(2, 1fr)
+
+.grid-3
+  display: grid
+  grid-template-columns: 1fr
+  grid-gap: 40px 30px
+  @media (min-width: $sm)
+    grid-template-columns: repeat(2, 1fr)
+  @media (min-width: $lg)
+    grid-template-columns: repeat(3, 1fr)
+
+.grid-4
+  display: grid
+  grid-template-columns: 1fr
+  grid-gap: 30px
+  @media (min-width: $sm)
+    grid-template-columns: repeat(2, 1fr)
+  @media (min-width: $md)
+    grid-template-columns: repeat(3, 1fr)
+  @media (min-width: $lg)
+    grid-template-columns: repeat(4, 1fr)
+
+.col
+  position: relative
+
+.pagination
+  position: relative
+  margin: 54px 0 0

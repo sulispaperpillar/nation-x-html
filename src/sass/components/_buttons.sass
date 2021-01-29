@@ -1,0 +1,87 @@
+.btn
+  display: inline-block
+  position: relative
+  top: 0
+  font-family: $rubik
+  white-space: nowrap
+  background-color: transparent
+  border: 0
+  &:hover
+    cursor: pointer
+    top: -3px
+    transition: all ease .3s
+  &:active
+    outline: none
+  &:focus
+    outline: none
+  &.btn
+    &-primary
+      padding: 21px 32px 20px
+      font-weight: 600
+      font-size: 14px
+      line-height: 17px
+      text-align: center
+      text-transform: uppercase
+      color: $primary
+      background-color: $secondary
+      border-radius: 30px
+    &-line
+      &-default
+        padding: 21px 32px 20px
+        font-weight: 700
+        font-size: 14px
+        line-height: 17px
+        text-align: center
+        text-transform: uppercase
+        color: $primary
+        background-color: transparent
+        border: 1px solid $primary
+        border-radius: 30px
+      &-primary
+        padding: 21px 32px 20px
+        font-weight: 700
+        font-size: 14px
+        line-height: 17px
+        text-align: center
+        text-transform: uppercase
+        color: $secondary
+        background-color: transparent
+        border: 1px solid rgba(253, 216, 93, .3)
+        border-radius: 30px
+        &:hover
+          border: 1px solid rgba(253, 216, 93, .5)
+    &-arrow
+      &-prev
+        display: flex
+        justify-content: center
+        align-items: center
+        width: 58px
+        height: 58px
+        background-color: #f9f9f9
+        border-radius: 29px
+        img
+          display: block
+          width: 14px
+          opacity: .5
+        &:hover
+          background-color: $white
+          box-shadow: 0px 26px 32px rgba(25, 27, 48, .05)
+          img
+            opacity: 1
+      &-next
+        display: flex
+        justify-content: center
+        align-items: center
+        width: 58px
+        height: 58px
+        background-color: #f9f9f9
+        border-radius: 29px
+        img
+          display: block
+          width: 14px
+          opacity: .5
+        &:hover
+          background-color: $white
+          box-shadow: 0px 26px 32px rgba(25, 27, 48, .05)
+          img
+            opacity: 1

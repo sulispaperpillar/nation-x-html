@@ -1,0 +1,291 @@
+.case
+  &-studies
+    &-container
+      > h1
+        margin: 0
+        font-family: $roboto
+        font-weight: 500
+        font-size: 28px
+        line-height: 42px
+        text-transform: capitalize
+        @media (min-width: $md)
+          font-size: 44px
+          line-height: 64px
+      > p
+        max-width: 510px
+        margin: 30px auto 0
+        font-size: 18px
+        line-height: 28px
+        opacity: .8
+    &-wrapper
+      margin: 80px 0 0
+    &-card
+      display: flex
+      flex-direction: column
+      @media (min-width: $lg)
+        flex-direction: row
+      &:nth-child(even)
+        @media (min-width: $lg)
+          flex-direction: row-reverse
+      + .case-studies-card
+        margin: 30px 0 0
+    &-image
+      flex: 0 0 100%
+      width: 100%
+      @media (min-width: $lg)
+        flex: 0 0 50%
+        width: 50%
+      img
+        display: block
+        width: 100%
+        height: auto
+        object-fit: cover
+        margin: 0
+        @media (min-width: $lg)
+          height: 100%
+    &-text
+      display: flex
+      flex-direction: column
+      justify-content: space-between
+      align-items: flex-start
+      flex: 0 0 100%
+      width: 100%
+      padding: 40px 30px
+      background-color: $white
+      box-shadow: 0px 26px 32px rgba(25, 27, 48, .05)
+      @media (min-width: $sm)
+        padding: 60px
+      @media (min-width: $lg)
+        flex: 0 0 50%
+        width: 50%
+      h3
+        margin: 0
+        font-weight: 500
+        font-size: 36px
+        line-height: 34px
+      p
+        margin: 30px 0 0
+        font-size: 18px
+        line-height: 28px
+        opacity: .8
+      ul
+        margin: 30px 0 0
+    &-button
+      margin: 30px 0 0
+  &-study
+    &-container
+      > h1
+        margin: 0
+        font-family: $roboto
+        font-weight: 500
+        font-size: 28px
+        line-height: 42px
+        text-transform: capitalize
+        @media (min-width: $md)
+          font-size: 44px
+          line-height: 64px
+      > img
+        display: block
+        max-width: auto
+        max-height: 63px
+        margin: 0
+    &-single
+      display: flex
+      justify-content: center
+      position: relative
+      margin: 60px 0 0
+      &:before
+        content: ''
+        position: absolute
+        bottom: -120px
+        left: 50%
+        transform: translateX(-50%)
+        width: 100vw
+        height: 530px
+        background-color: #f9f9f9
+    &-triple
+      display: flex
+      justify-content: center
+      align-items: flex-start
+      position: relative
+      overflow: hidden
+      height: 160px
+      margin: 60px 0 0
+      padding: 45px 30px 0
+      background-color: #e8ecf4
+      border-radius: 40px
+      @media (min-width: $sm)
+        height: 300px
+      @media (min-width: $md)
+        height: 340px
+      @media (min-width: $lg)
+        height: 420px
+      @media (min-width: $xl)
+        height: 480px
+    &-detail
+      margin: 60px 0 0
+    &-points
+      ul
+        &.grid-2
+          grid-gap: 20px 60px
+          li
+            margin: 0
+            + li
+              margin: 0
+        &.flex
+          display: flex
+          flex-wrap: wrap
+          justify-content: flex-start
+          align-items: center
+          width: calc(100% + 120px)
+          margin: 0 -60px
+          li
+            margin: 20px 60px 0
+            + li
+              margin: 20px 60px 0
+    &-text
+      margin: 50px 0 0
+      .grid-2
+        grid-gap: 60px
+      p
+        margin: 0
+        font-size: 18px
+        line-height: 28px
+        opacity: .8
+    &-slider
+      position: relative
+      margin: 60px 0 0
+      &-wrapper
+        position: relative
+        overflow: hidden
+        padding: 30px 0 68px
+        background-color: #e8ecf4
+        border-radius: 40px
+    &-arrows
+      position: absolute
+      z-index: 1
+      top: 50%
+      right: -29px
+      transform: translateY(-50%)
+      .btn
+        + .btn
+          margin: 20px 0 0
+    &-carousel
+      position: initial
+      width: 256px
+      @media (min-width: $sm)
+        width: 314px
+      .slick
+        &-list
+          overflow: initial
+        &-slide
+          outline: none
+        &-dots
+          display: flex
+          justify-content: center
+          align-items: center
+          position: absolute
+          bottom: 30px
+          left: 50%
+          transform: translateX(-50%)
+          margin: 0
+          padding: 0
+          list-style: none
+          li
+            width: 6px
+            height: 6px
+            border-radius: 50%
+            background-color: #353843
+            opacity: .3
+            button
+              display: none
+            + li
+              margin: 0 0 0 6px
+            &.slick-active
+              width: 10px
+              height: 10px
+              opacity: 1
+    &-item
+      margin: 0 0 0 30px
+      img
+        display: block
+        width: 100%
+        border-radius: 30px
+    &-publication
+      display: flex
+      justify-content: center
+      align-items: center
+      margin: 80px 0 0
+      img
+        display: block
+        margin: 0 40px
+        &.pix11
+          max-width: 180px
+        &.ktla
+          max-height: 90px
+        &.telemundo
+          max-height: 80px
+        &.usa-today
+          max-width: 300px
+
+.single
+  &-iphone
+    &-wrapper
+      position: relative
+      width: 356px
+      > img
+        display: block
+        position: absolute
+        z-index: 0
+        top: 50%
+        left: 50%
+        transform: translate(-50%, -50%)
+        width: 314px
+        max-width: 89%
+        height: 680px
+        max-height: 95%
+        object-fit: cover
+    &-mask
+      position: relative
+      z-index: 1
+      > img
+        display: block
+        width: 100%
+
+.triple
+  &-iphone
+    &-wrapper
+      position: relative
+      width: 356px
+      + .triple-iphone-wrapper
+        margin: 0 0 0 10px
+        @media (min-width: $sm)
+          margin: 0 0 0 20px
+      > img
+        display: block
+        position: absolute
+        z-index: 0
+        top: 50%
+        left: 50%
+        transform: translate(-50%, -50%)
+        width: 314px
+        max-width: 89%
+        height: 680px
+        max-height: 95%
+        object-fit: cover
+      &:nth-child(1)
+        top: 20px
+        @media (min-width: $sm)
+          top: 70px
+      &:nth-child(2)
+        top: 0
+      &:nth-child(3)
+        top: 20px
+        @media (min-width: $sm)
+          top: 70px
+    &-mask
+      position: relative
+      z-index: 1
+      > img
+        display: block
+        width: 100%
