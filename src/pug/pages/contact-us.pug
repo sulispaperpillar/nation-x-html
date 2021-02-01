@@ -13,47 +13,53 @@ block content
               button.btn.btn-tab(data-tab="influencers") Influencers
           .tab-panel.active(data-target="brands")
             .contact-form
-              form
+              form(action="https://www.enformed.io/ez7i237v", method="POST")
+                input(type="hidden", name="*default_email", value="shadon@nationx.io")
+                input.hidden-subject(type="hidden", name="*subject", value="Nation X - Brands by")
+                input(type="hidden", name="*redirect", value="http://www.nationx.us/contact-us.html")
                 .form-wrapper
                   .form-group
                     .grid-2
                       .col
-                        input.form-input(type="text", placeholder="Name")
+                        input.form-input(type="text", name="name", placeholder="Name")
                       .col
-                        input.form-input(type="text", placeholder="Brand")
+                        input.form-input(type="text", name="brand", placeholder="Brand")
                   .form-group
                     .grid-2
                       .col
-                        input.form-input(type="text", placeholder="Company")
+                        input.form-input(type="text", name="company", placeholder="Company")
                       .col
-                        input.form-input(type="email", placeholder="Email")
+                        input.form-input.form-email-brands(type="email", name="email", placeholder="Email")
                   .form-group
                     .grid-2
                       .col
-                        input.form-input(type="text", placeholder="Project Budget")
+                        input.form-input(type="text", name="budget", placeholder="Project Budget")
                       .col
-                        input.form-input(type="text", placeholder="Timing")
+                        input.form-input(type="text", name="timing", placeholder="Timing")
                   .form-group
-                    textarea.form-input(placeholder="Tell Us More")
+                    textarea.form-input(name="message", placeholder="Tell Us More")
                   .form-group.text-right
                     button.btn.btn-primary(type="submit") Send Message
           .tab-panel(data-target="influencers")
             .contact-form
-              form
+              form(action="https://www.enformed.io/ez7i237v", method="POST")
+                input(type="hidden", name="*default_email", value="shadon@nationx.io")
+                input.hidden-subject(type="hidden", name="*subject", value="Nation X - Influencers by")
+                input(type="hidden", name="*redirect", value="http://www.nationx.us/contact-us.html")
                 .form-wrapper
                   .form-group
                     .grid-2
                       .col
-                        input.form-input(type="text", placeholder="Name")
+                        input.form-input(type="text", name="name", placeholder="Name")
                       .col
-                        input.form-input(type="text", placeholder="Phone Number")
+                        input.form-input(type="text", name="phone", placeholder="Phone Number")
                   .form-group
                     .grid-2
                       .col
-                        input.form-input(type="email", placeholder="Email")
+                        input.form-input.form-email-influencers(type="email", name="email", placeholder="Email")
                       .col
-                        input.form-input(type="text", placeholder="Link")
+                        input.form-input(type="text", name="link", placeholder="Link")
                   .form-group
-                    textarea.form-input(placeholder="What Value Do You Bring")
+                    textarea.form-input(name="message", placeholder="What Value Do You Bring")
                   .form-group.text-right
                     button.btn.btn-primary(type="submit") Send Message

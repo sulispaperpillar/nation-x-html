@@ -74,4 +74,12 @@
     $('.tab-panel[data-target="' + dataTab + '"]').addClass('active').siblings().removeClass('active');
   });
 
+  // Email
+  $('.form-email-brands').on('blur', function() {
+    $(this).closest('form').find('.hidden-subject').val('Nation X - Brands by ' + $(this).val());
+  });
+  $('.form-email-influencers').on('blur', function() {
+    $(this).closest('form').find('.hidden-subject').val('Nation X - Influencers by ' + $(this).val());
+  });
+
 })(jQuery);
